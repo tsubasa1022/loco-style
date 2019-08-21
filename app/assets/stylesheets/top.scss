@@ -1,0 +1,218 @@
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+a{
+  color: #FFFFDD;
+  text-decoration: none;
+}
+
+p{
+  line-height: 150%;
+}
+
+li:hover {
+  font-size: 2.0em;/*文字サイズ1.2倍*/
+  font-weight: bold;
+  transition: 2.0s ;/*ゆっくり変化1.0秒*/
+}
+
+li {
+  display: inline-block;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    height: 80px;
+    line-height: 80px;
+}  
+
+.header{
+  color: #FFFFDD;
+  background-color: #444444;
+  text-align: center;
+  height: 100vh;
+  padding: 170px 30px 80px;
+  .sub-name{
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  .shop-name{
+    font-size: 4.5rem;
+  }
+  .menu{
+    font-size: 20px;
+    
+  }
+}
+
+.main{
+
+  .about {
+    height: 100vh;
+    background-color:  #ffffff;
+    position: relative;
+
+    .left-content{
+      width: 40vw;
+      float:left;
+      
+    &__title {
+      height:30vh;
+      font-size: 50px;
+      line-height: 30vh;
+      text-align: center;
+    }
+
+    &__img {
+      
+      height:50vh;
+      line-height: 50vh;
+      text-align: center;
+    
+      &--picture {
+        width:  360px;       /* ※縦横を同値に */
+        height: 360px;       /* ※縦横を同値に */
+        border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+      }
+    }
+  }
+
+    .right-content {
+      position: absolute;
+      left:40vw;
+      top:30vh;
+      margin-right: 5vw;
+    }
+  }
+  
+  .foods {
+    height: 100vh;
+    width: 100vw;
+    background-color: #444444;
+    
+    .title{
+      width: 40vw;
+      height:30vh;
+      font-size: 50px;
+      line-height: 30vh;
+      text-align: center;
+      
+    }
+    .foods-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      position: absolute;
+      .food-box{
+       display: block;
+       margin: 10px;
+       
+        &__title{
+        
+        }
+        &__price{
+
+        }
+      }
+    }
+  }
+  .blogs {
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    .title{
+      width: 40vw;
+      height:30vh;
+      font-size: 50px;
+      line-height: 30vh;
+      text-align: center;
+    }
+    .right-content{
+      width: 60vw;
+      height: 100vh;
+      position: relative;
+      .blog {
+        padding: 20px;
+        width: 600px;
+        height: 700px;
+        background-color: red;
+        overflow: scroll;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        &__header{
+          height: 15vh;
+        }
+        &__imgbox{
+          height: 45vh;
+          position: relative;
+          width: 100%;
+          width: 100%;
+          margin-bottom: 20px;
+        &--img{
+          display: block;
+          max-width: 100%;
+          // width: auto;
+          max-height: 100%;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        }
+        &__text-box{
+          height: 40vh;
+        }
+      }
+    }
+  }
+  
+  .access{
+    height: 100vh;
+    background-color: #444444;
+    display: flex;
+    .left-content{
+      width: 40vw;
+      height:30vh;
+      line-height: 30vh;
+      text-align: center;
+      &__title{
+        font-size: 50px;
+      }
+      &__text{
+
+      }
+    }
+    .right-content {
+      width: 60vw;
+      position: relative;
+      .map{
+        height: 700px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+
+  }
+  
+  .calendar{
+    height: 100vh;
+    background-color:   #ffffff;
+  }
+ 
+}
